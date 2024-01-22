@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Pangolin&display=swap"
+        rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <title>Weather forecast</title>
+</head>
+{{!-- font-family: 'Pangolin', cursive; --}}
+
+<body>
+    <header class="container">
+        <div class="heading-1">
+            <h1 class="heading-1--primary">Weather Forecast</h1>
+        </div>
+        <div class="heading-2">
+            <span class="heading-2--secondary-1">Use this site to get weather condition of any place at the
+                earth!.</span>
+            <span class="heading-2--secondary-2">Go try yourself..</span>
+        </div>
+        <div class="container-1">
+            <form>
+                <input placeholder="Enter location" type="text">
+                <button class="waves-effect waves-light btn edit-btn">Search</button>
+            </form>
+            <div class="pop">
+                <p id='message-1'></p>
+                <p id='message-2'></p>
+            </div>
+        </div>
+    </header>
+    <footer>
+        <span class="footer__heading">Created by : {{name}} &#10084;
+        </span>
+    </footer>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>
